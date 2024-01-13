@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top:0;
+}
+
+.gradient {
+    background: #EC008D;
+    background: linear-gradient(to bottom right, #EC008D 0%, #F08B32 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
