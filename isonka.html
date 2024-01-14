@@ -1,28 +1,38 @@
 <html>
 <head>
     <title>Wiggly Air Artists: isonka</title>
-    <link rel="icon" type="image/svg" href="logo.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg" href="img/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
     <div>
-        <img class="logo" src="logo.svg" alt="make it hot logo"/>
+        <img class="logo" src="img/logo.svg" alt="make it hot logo"/>
         <h1>isonka</h1>
         <br>
-        <p><strong>booking</strong></p>
+        <p>
+            <strong>booking</strong>
+        </p>
         <ul>
-            <li><a class="gradient" target="_blank" href="mailto:booking@makeithot.net">booking@makeithot.net</a></li>
+            <li><span class="gradient" id="email-address"></span></li>
         </ul>
-        <p><strong>links</strong></p>
+        <br>
+
+        <p>
+            <strong>links</strong>
+        </p>
         <p>
         <ul>
             <li><a class="gradient" href="https://soundcloud.com/isonka">soundcloud</a></li>
             <li><a class="gradient" href="https://ra.co/dj/isonka">resident advisor</a></li>
         </ul>
+        <br>
+
         </p>
-        <p><strong>mixtapes</strong></p>
+        <p>
+            <strong>mixtapes</strong>
+        </p>
         <ul>
             <li><a class="gradient" href="https://soundcloud.com/isonka/mixtape-006-90s-vinyl">006: 90s house vinyl</a>
             </li>
@@ -36,5 +46,10 @@
     </div>
 
 </div>
+<script>
+    const email = ["booking", "@", "makeithot", ".", "net"].join("");
+    document.getElementById("email-address").innerHTML = "<a target='_blank' href=\"mailto:" + email + "\">" + email + "</a>";
+</script>
+
 </body>
 </html>

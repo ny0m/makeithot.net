@@ -1,20 +1,41 @@
 <html>
 <head>
     <title>Make It Hot Music</title>
-    <link rel="icon" type="image/svg" href="logo.svg">
+    <link rel="icon" type="image/svg" href="img/logo.svg">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <style>
-
-    </style>
 </head>
 <body>
 <div class="container">
     <div>
-        <br>
-        <img class="logo" src="logo.svg" alt="make it hot logo"/>
+        <img class="logo" src="img/logo.svg" alt="make it hot logo"/>
         <h1>make it hot</h1>
+        <p>a house + disco party</p>
+        <br>
+
+        <p>
+            <strong>contact</strong>
+        </p>
+        <p><span class="gradient" id="email-address"></span></p>
+        <br>
+
+        <p>
+            <strong>music by</strong>
+        </p>
+        <p><a href="/isonka" class="gradient">isonka</a></p>
+        <br>
+
+        <p>
+            <strong>hosted by</strong>
+        </p>
+        <p><a href="mailto:tilden@makeithot.net" target="_blank" class="gradient">tilden</a></p>
+        <br>
     </div>
 </div>
+<script>
+    const email = ["booking", "@", "makeithot", ".", "net"].join("");
+    document.getElementById("email-address").innerHTML = "<a target='_blank' href=\"mailto:" + email + "\">" + email + "</a>";
+</script>
+
 </body>
 </html>
