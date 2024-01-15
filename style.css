@@ -23,6 +23,7 @@ h1 {
 ul {
     text-align: left;
     list-style: none;
+    line-height: 150%;
 }
 
 .container {
